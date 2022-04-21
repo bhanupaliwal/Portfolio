@@ -1,0 +1,51 @@
+.heading-section h1{
+    color: #ff9900;
+}
+.heading-section p{
+    color: #ffffff;
+}
+
+.skills-section{
+    display: grid;
+    grid-template-rows: repeat(2,1fs);
+    row-gap: 3rem;
+    margin-top: 3rem;
+}
+.heading-section{
+    grid-row: 1/2;
+}
+.content-section{
+    display: grid;
+    grid-template-columns: repeat(5,1fs);
+    column-gap: 1rem;
+    grid-row: 2/2;
+}
+.language-col{
+    grid-column: 1/2;
+}
+.framework-col{
+    grid-column: 2/3;
+}
+.library-col{
+    grid-column: 3/4;
+}
+.database-col{
+    grid-column: 4/5;
+}
+.tool-col{
+    grid-column: 5/5;
+}
+.items{
+    display: flex;
+    height: 3.2rem;
+    width: 3.2rem;
+    font-size: 1.4rem;
+    color: #ffffff;
+    align-items: center;
+}
+.items:hover{
+    color: #ff9900;
+}
+.item{
+    margin-right: 1rem;
+}
