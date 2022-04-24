@@ -3,14 +3,34 @@
     padding: 0;
     box-sizing: border-box;
 }
-#check{
-    display: none;
-}
-
-nav{
+.navbar{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    color: #fff;
+}
+.nav-links{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    width: 75%;
+}
+.navbar-item{
+    margin: 0 20px;
+    font-size: 18px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    color: #fff;
+    padding: 8px 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+.navbar-item:hover{
+    background-color: #ff9900;
+    color: #1b1b1b;
+}
+.mobile-menu-icon{
+    display: none;
 }
 nav .logo a{
     text-decoration: none;
@@ -21,70 +41,59 @@ nav .logo a{
 nav .logo a:hover{
     color: #ff9900;
 }
-nav ul{
-    display: flex;
-    list-style: none;
-    margin-right: 100px;
-}
-nav ul li{
-    margin: 0 20px;
-    font-size: 18px;
-}
-nav ul li a{
-    text-decoration: none;
-    letter-spacing: 1px;
-    color: #fff;
-    padding: 8px 10px;
-    border-radius: 5px;
-    transition: all 0.3s ease;
-}
-nav ul li a:hover{
-    background-color: #ff9900;
-    color: #1b1b1b;
-}
-nav .menu-btn i{
-    color: #fff;
-    font-size: 22px;
-    cursor: pointer;
-    display: none;
-}
 
 @media (max-width: 940px){
     .logo{
         display: block;
     }
-    nav .menu-btn i{
-        display: block;
-        padding: 0;
-        margin-right: 40px;
+    .nav-links{
+        display: none;
+        width: 25%;
+        height: 100%;
     }
-    #check:checked ~ .menu-btn i:before{
-        content: "\f00d";
-    }
-    nav ul{
-        position: fixed;
+    .nav-links-mobile{
+        position: absolute;
         display: block;
+        left: 0;
         top: 0;
-        left: -100%;
-        background: #111;
-        height: 100vh;
         width: 40%;
+        height: 100vh;
+        background-color: #060b26;
+        list-style: none;
+        transition: all 0.5s ease-out;
         text-align: center;
-        transition: all 0.3 ease ;
     }
-    #check:checked ~ ul{
-        left: 0%;
-    }
-    nav ul li{
-        margin: 40px 0;
-    }
-    nav ul li a{
-        font-size: 20px;
+    .nav-links-mobile li {
         display: block;
+        color: #fff;
+        text-align: left;
+        width: 100%;
+        margin-left: 50px;
+        padding: 20px;
+        font-size: 40px;
     }
-    nav ul li a:hover{
-        color: #ff9900;
-        background: none;
+    .nav-links-mobile li a{
+        font-size: 25px;
+    }
+    .nav-links-mobile li a:hover{
+        background-color: #ff9900;
+    }
+    .mobile-menu-icon{
+        display: block;
+        color: #fff;
+        background-color: transparent;
+        border: none;
+        font-size: 30px;
     }
 
+}
+@media (min-width:500px) and (max-width:600px){
+    .nav-links-mobile{
+        width: 50%;
+    }
+}
+@media (max-width:500px) {
+    .nav-links-mobile{
+        width: 75%;
+    }
 }

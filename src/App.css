@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Poppins:wght@500&display=swap');
 html{
   scroll-behavior: smooth;
 }
 body {
   background-color: #2a2c3a;
-  font-family: 'Poppins', sans-serif; 
+  font-family: 'Open Sans', sans-serif;; 
   padding: 80px;
   padding-bottom: 0;
 }

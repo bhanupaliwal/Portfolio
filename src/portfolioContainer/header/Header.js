@@ -3,16 +3,14 @@ import { Link } from "react-router-dom"
 import "./Header.css"
 
 export default function Header(){
-    const[sidebar,setsidebar] = useState(false);
-    const showsidebar =() => setsidebar(!sidebar);
+    const[isMobile,setisMobile] = useState(false);
     return(
-        <nav>
+        <nav className="navbar">
             <div className="logo"><Link to="/">Bhanu.dev</Link></div>
-            <input type="checkbox" id="check"></input>
-            <label className="menu-btn" for="check">
-                <i class="fa-solid fa-bars"></i>
-            </label>
-            <ul onClick={showsidebar}>
+            <button className="mobile-menu-icon" onClick={()=>setisMobile(!isMobile)}>
+                {isMobile ? (<li className="fas fa-times"></li>) : (<i class="fa-solid fa-bars"></i>)}
+            </button>
+            <ul className={isMobile ? "nav-links-mobile" : "nav-links"} onClick={()=> setisMobile(false)}>
                 <li><Link to='/' className="navbar-item">Home</Link></li>
                 <li><Link to="/projects" className="navbar-item">Projects</Link></li>
                 <li><Link to="/skills" className="navbar-item">Skills</Link></li>
