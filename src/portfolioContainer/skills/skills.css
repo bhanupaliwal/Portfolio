@@ -14,6 +14,8 @@
 .heading-section{
     grid-row: 1/2;
 }
+
+
 .content-section{
     display: grid;
     grid-template-columns: repeat(5,1fs);
@@ -42,10 +44,32 @@
     font-size: 1.4rem;
     color: #ffffff;
     align-items: center;
+    transition: font-size 5ms linear;
 }
 .items:hover{
     color: #ff9900;
+    font-size: 1.5rem;
 }
 .item{
     margin-right: 1rem;
 }
+
+@media (max-width: 550px) {
+    .content-section{
+        display: block;
+    }
+}
+@media screen and (min-device-width: 550px) and (max-device-width: 950px) { 
+    .content-section{
+        display: grid;
+        grid-template-columns: repeat(2,1fs);
+    }
+    .language-col,.library-col,.tool-col{
+        grid-column: 1/2;
+    }
+    .framework-col,.database-col{
+        grid-column: 2/2;
+    }
+}
+
+

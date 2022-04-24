@@ -20,7 +20,7 @@ function App() {
             <Route exact path="/blogs" element={<Blogs />}></Route>
             <Route exact path="/aboutme" element={<About />}></Route>
           </Routes>
-          {/* <Footer /> */}
+          <Footer />
        </Router>
   );
 }

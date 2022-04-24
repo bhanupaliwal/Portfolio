@@ -7,6 +7,7 @@
     grid-row: 1/2;
 }
 .content-section{
+    margin-top: 3rem;
     grid-row: 2/2;
     display: grid;
     grid-template-columns: repeat(2,1fs);
@@ -32,19 +33,20 @@
     color: #ff9900;
 }
 .content-section p{
-    width: 98%;
+    width: 95%;
     color: #ffffff;
+    text-align: justify;
 }
 .blog-button{
+    border: none;
+    width: 95%;
     text-decoration: none;
-    padding: 0.75rem 40% 0.75rem 40%;
-    color: #ffffff;
     background-color: #ff9900;
     line-height: 2.5rem;
     font-weight: 400;
-    text-align: center;
     font-size: 1rem;
     border-radius: 0.25rem;
+    text-align: center; 
 }
 .blog-button:hover{
     background-color: #ffffff;
@@ -52,4 +54,10 @@
 }
 .new-row{
     margin-top: 3rem;
+}
+
+@media (max-width: 700px) {
+    .content-section{
+        display: block;
+    }
 }

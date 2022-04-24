@@ -12,7 +12,7 @@ export default function Profile(){
                         <p>I am a Full Stack Web Developer based India. <br /> Check out my work to see what I can do for you.</p>
                     </div>
                     <div className="button">
-                        <button className="btn1"><i class="fa-solid fa-download"></i>   Resume</button>
+                        <a href="https://www.google.co.in/"><button className="btn1"><i class="fa-solid fa-download"></i>   Resume</button></a>
                         <Link to="/projects"><button className="btn2">View Projects</button></Link>
                     </div>
                 </div>

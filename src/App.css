@@ -6,6 +6,7 @@ body {
   background-color: #2a2c3a;
   font-family: 'Poppins', sans-serif; 
   padding: 80px;
+  padding-bottom: 0;
 }
 .grids{
   display: grid;

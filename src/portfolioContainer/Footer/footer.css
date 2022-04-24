@@ -1,9 +1,9 @@
+.footer-content{
+    color: #ffffff;
+}
 .footer-content span{
-    color: #ff9900;
+    color:#ff9900;
 }
 .footer-content{
-    width: 80%;
-}
-.footer-content p{
-    color: #ffffff;
+    margin-top: 70px;
 }

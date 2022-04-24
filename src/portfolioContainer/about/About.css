@@ -29,3 +29,13 @@
     width: 400px;
     height: 500px;
 }
+
+@media (max-width: 900px) {
+    .about-content{
+        display: block;
+    }
+    .about-image img{
+        margin-top: 40px;
+        width: 100%;
+    }
+}
